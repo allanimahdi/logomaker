@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+<label>
+  Name:
+  <input type="text" [formControl]="CompanyName">
+</label>
+<p>
+  <button class="main-btn" (click)="addName(CompanyName.value)">Next Step</button>
+</p>
+    </div>
+  </div>
+</div>

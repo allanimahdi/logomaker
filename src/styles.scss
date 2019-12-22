@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "~@material/image-list/mdc-image-list";
+@import "~@material/feature-targeting/functions";
+@import "~@material/feature-targeting/mixins";
+
+@mixin my-component-core-styles($query: mdc-feature-all()) {
+  $feat-structure: mdc-feature-create-target($query, structure);
+
+  @include mdc-feature-targets($feat-structure) {
+    // ...
+  }
+}
+.my-image-list {
+  @include mdc-image-list-standard-columns(4);
+}

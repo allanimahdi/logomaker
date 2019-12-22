@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+<ng-select class="selectpicker"
+           [items]="fonts"
+           bindLabel="name"
+           placeholder="Select font"
+           [(ngModel)]="selectedFont">
+</ng-select>
+<p>
+  <button class="main-btn" (click)="addFont(selectedFont.name)">Next Step</button>
+</p>
+    </div>
+  </div>
+</div>
